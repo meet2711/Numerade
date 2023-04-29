@@ -66,7 +66,7 @@ function intialize() {
             else if (key == "⌫") {
                 keyTile.id = "Backspace";
             }
-            else if (("0" <= key && key <= "9") || (key == "-") || (key == "+") || (key == "/") || (key == "*")) {
+            else if (("0" <= key && key <= "9") || (key == "-") || (key == "+") || (key == "/") || (key == "*") || (key == "=")) {
                 keyTile.id = "Key" + key; // "Key" + "A";
             }
 
@@ -96,7 +96,7 @@ function processInput(e) {
     if (gameOver) return;
 
     // alert(e.code);
-    if (("Key0" <= e.code && e.code <= "Key9") || (e.code == "Key+") || (e.code == "Key-") || (e.code == "Key*") || (e.code == "Key/")) {
+    if (("Key0" <= e.code && e.code <= "Key9") || (e.code == "Key+") || (e.code == "Key-") || (e.code == "Key*") || (e.code == "Key/") || (e.code == "Key=")) {
         if (col < width) {
             let currTile = document.getElementById(row.toString() + '-' + col.toString());
             if (currTile.innerText == "") {

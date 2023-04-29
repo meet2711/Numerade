@@ -113,9 +113,8 @@ hr {
 }
 
 .popup-content {
-    width: clamp(300px, 90vw, 4800px);
+    width: clamp(300px, 90vw, 480px);
     background-color: #fff;
-    margin: clamp(1.5rem, 100vw, 3rem);
     padding: clamp(1.5rem, 100vw, 3rem);
     box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
     border-radius: .5em;

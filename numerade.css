@@ -1,7 +1,19 @@
 body {
-    background-image: url("bg.jpg");
+    /* background-image: url("bg.jpg"); */
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+}
+
+.bg {
+    background-image: url("bg.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 hr {
@@ -54,7 +66,7 @@ hr {
 .absent {
     background-color: #787C7E;
     color: white;
-    border-color:white;
+    border-color: white;
 }
 
 

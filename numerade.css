@@ -64,6 +64,7 @@ body {
 }
 
 .key-tile {
+    background-color: black;
     width: 76px;
     height: 40px;
     margin: 1px;
@@ -80,6 +81,7 @@ body {
 }
 
 .enter-key-tile {
+    background-color: black;
     width: 155px;
     height: 40px;
     margin: 1px;

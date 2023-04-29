@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="popup">
+    <!-- <div class="popup">
         <div class="popup-content">
             <h1>X</h1>
             <h2>Subscribe...</h2>
@@ -21,7 +21,7 @@
                 assumenda, nostrum esse reiciendis quibusdam vitae iure harum illum similique consectetur ut ipsam, at
                 repellendus! Nulla est debitis illo.</p>
         </div>
-    </div>
+    </div> -->
     <h1 id="title">Numerade</h1>
     <hr>
     <br>
@@ -30,7 +30,32 @@
 
     <br>
     <h1 id="answer"></h1>
+    <div class="popup">
+        <button id="close">&times;</button>
+        <h2>Automatic Pop-Up</h2>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita distinctio fugiat alias iure qui, commodi
+            minima magni ullam aliquam dignissimos?
+        </p>
+        <a href="#">Let's Go</a>
+    </div>
+    <!--Script-->
+    <script type="text/javascript">
+        window.addEventListener("load", function () {
+            setTimeout(
+                function open(event) {
+                    document.querySelector(".popup").style.display = "block";
+                },
+                2000
+            )
+        });
 
+
+        document.querySelector("#close").addEventListener("click", function () {
+            document.querySelector(".popup").style.display = "none";
+        });
+    </script>
+    <!-- 
     <script>
         const popup = document.querySelector('.popup');
         const x = document.querySelector('.popup-content h1')
@@ -43,7 +68,7 @@
             popup.classList.remove('showPopup');
             popup.childNodes[1].classList.remove('showPopup');
         })
-    </script>
+    </script> -->
 </body>
 
 </html>

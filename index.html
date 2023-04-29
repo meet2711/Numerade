@@ -11,9 +11,9 @@
 </head>
 
 <body>
-    <!-- <div class="popup">
+    <div class="popup">
         <div class="popup-content">
-            <h1>X</h1>
+            <button id="close">&times;</button>
             <h2>Subscribe...</h2>
             <p>And some dummy content that shows on this popup Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Saepe, ratione quisquam iure libero impedit aspernatur, expedita quaerat mollitia delectus, eius ad
@@ -21,7 +21,7 @@
                 assumenda, nostrum esse reiciendis quibusdam vitae iure harum illum similique consectetur ut ipsam, at
                 repellendus! Nulla est debitis illo.</p>
         </div>
-    </div> -->
+    </div>
     <h1 id="title">Numerade</h1>
     <hr>
     <br>
@@ -30,7 +30,7 @@
 
     <br>
     <h1 id="answer"></h1>
-    <div class="popup">
+    <!-- <div class="popup">
         <button id="close">&times;</button>
         <h2>Automatic Pop-Up</h2>
         <p>
@@ -38,9 +38,9 @@
             minima magni ullam aliquam dignissimos?
         </p>
         <a href="#">Let's Go</a>
-    </div>
+    </div> -->
     <!--Script-->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         window.addEventListener("load", function () {
             setTimeout(
                 function open(event) {
@@ -54,8 +54,8 @@
         document.querySelector("#close").addEventListener("click", function () {
             document.querySelector(".popup").style.display = "none";
         });
-    </script>
-    <!-- 
+    </script> -->
+    
     <script>
         const popup = document.querySelector('.popup');
         const x = document.querySelector('.popup-content h1')
@@ -64,11 +64,11 @@
             popup.classList.add('showPopup');
             popup.childNodes[1].classList.add('showPopup');
         })
-        x.addEventListener('click', () => {
+        document.querySelector("#close").addEventListener('click', () => {
             popup.classList.remove('showPopup');
             popup.childNodes[1].classList.remove('showPopup');
         })
-    </script> -->
+    </script>
 </body>
 
 </html>

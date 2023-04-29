@@ -13,13 +13,14 @@
 <body>
     <div class="popup">
         <div class="popup-content">
-            <button id="close">&times;</button>
+            <button class="close">&times;</button>
             <h2>Subscribe...</h2>
             <p>And some dummy content that shows on this popup Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Saepe, ratione quisquam iure libero impedit aspernatur, expedita quaerat mollitia delectus, eius ad
                 excepturi inventore aperiam perspiciatis voluptatum porro. Tenetur libero, aspernatur nobis quod autem
                 assumenda, nostrum esse reiciendis quibusdam vitae iure harum illum similique consectetur ut ipsam, at
                 repellendus! Nulla est debitis illo.</p>
+                <br><button class="close">Let's Go</button>
         </div>
     </div>
     <h1 id="title">Numerade</h1>
@@ -64,7 +65,7 @@
             popup.classList.add('showPopup');
             popup.childNodes[1].classList.add('showPopup');
         })
-        document.querySelector("#close").addEventListener('click', () => {
+        document.querySelector(".close").addEventListener('click', () => {
             popup.classList.remove('showPopup');
             popup.childNodes[1].classList.remove('showPopup');
         })

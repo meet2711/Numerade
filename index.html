@@ -14,52 +14,39 @@
     <div class="popup">
         <div class="popup-content">
             <button class="close" id="cl">&times;</button>
-            <h2>Subscribe...</h2>
-            <p>And some dummy content that shows on this popup Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Saepe, ratione quisquam iure libero impedit aspernatur, expedita quaerat mollitia delectus, eius ad
-                excepturi inventore aperiam perspiciatis voluptatum porro. Tenetur libero, aspernatur nobis quod autem
-                assumenda, nostrum esse reiciendis quibusdam vitae iure harum illum similique consectetur ut ipsam, at
-                repellendus! Nulla est debitis illo.</p>
-                <br><button id="go" class="close">Let's Go</button>
+            <h4>Instructions</h4>
+            <div class="inst">
+                <img class="single" src="green.png" alt="">
+                <p>Correct guess, correct position</p>
+                <hr>
+                <img class="single" src="yellow.png" alt="">
+                <p>Correct guess, wrong position</p>
+                <hr>
+                <img class="single" src="grey.png" alt="">
+                <p>Wrong guess</p>
+                <hr>
+                <hr>
+                <h5>Examples:</h5>
+                <img class="whole" src="wrong.png" alt="">
+                <p>Here, 1 is guessed correctly and is in correct position. While, -,= are guessed correctly but its
+                    position is incorrect. Whereas 4,6,+ are guessed incorrectly.</p>
+                <hr>
+                <img class="whole" src="right.png" alt="">
+                <p>Here is the correct answer for the above example.</p>
+
+            </div>
         </div>
     </div>
     <h1 id="title">Numerade</h1>
-    <hr>
+    <hr style="width:500px">
     <br>
     <div id="board">
     </div>
 
     <br>
     <h1 id="answer"></h1>
-    <!-- <div class="popup">
-        <button id="close">&times;</button>
-        <h2>Automatic Pop-Up</h2>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita distinctio fugiat alias iure qui, commodi
-            minima magni ullam aliquam dignissimos?
-        </p>
-        <a href="#">Let's Go</a>
-    </div> -->
-    <!--Script-->
-    <!-- <script type="text/javascript">
-        window.addEventListener("load", function () {
-            setTimeout(
-                function open(event) {
-                    document.querySelector(".popup").style.display = "block";
-                },
-                2000
-            )
-        });
-
-
-        document.querySelector("#close").addEventListener("click", function () {
-            document.querySelector(".popup").style.display = "none";
-        });
-    </script> -->
-    
     <script>
         const popup = document.querySelector('.popup');
-        const x = document.querySelector('.popup-content h1')
 
         window.addEventListener('load', () => {
             popup.classList.add('showPopup');

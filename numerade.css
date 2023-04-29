@@ -4,10 +4,6 @@ body {
     text-align: center;
 }
 
-hr {
-    width: 500px;
-}
-
 #title {
     font-size: 36px;
     font-weight: bold;
@@ -115,7 +111,7 @@ hr {
 .popup-content {
     width: clamp(300px, 90vw, 150px);
     background-color: #fff;
-    padding: clamp(1.5rem, 100vw, 3rem);
+    padding: clamp(1.5rem, 100vw, 0.7rem);
     box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
     border-radius: .5em;
     opacity: 0;
@@ -140,14 +136,14 @@ hr {
 
 .popup #cl {
     display: block;
-    margin: 0 0 20px auto;
+    margin: 0 0 10px auto;
     background-color: transparent;
-    font-size: 30px;
+    font-size: 10px;
     color: #ffffff;
     background: #03549a;
     border-radius: 100%;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     border: none;
     outline: none;
     cursor: pointer;
@@ -158,44 +154,3 @@ hr {
     transform: translateY(0);
     pointer-events: all;
 }
-
-.popup #go {
-    display: block;
-    width: 150px;
-    position: relative;
-    margin: 10px auto;
-    text-align: center;
-    background-color: #0f72e5;
-    border-radius: 20px;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 8px 0;
-}
-
-/* .popup {
-    background-color: #ffffff;
-    width: 420px;
-    padding: 30px 40px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 50%;
-    border-radius: 8px;
-    font-family: "Poppins", sans-serif;
-    display: none;
-    text-align: center;
-}
-
-
-
-.popup h2 {
-    margin-top: -20px;
-}
-
-.popup p {
-    font-size: 14px;
-    text-align: justify;
-    margin: 20px 0;
-    line-height: 25px;
-}
-*/

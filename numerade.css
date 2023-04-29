@@ -154,3 +154,14 @@ body {
     transform: translateY(0);
     pointer-events: all;
 }
+
+
+.inst .single {
+    width: 30px;
+    height: 30px;
+}
+
+.inst .whole {
+    width: 150px;
+    height: 30px;
+}

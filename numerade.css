@@ -138,7 +138,7 @@ hr {
     transform: scale(.9);
 }
 
-.popup button {
+.popup #cl {
     display: block;
     margin: 0 0 20px auto;
     background-color: transparent;
@@ -159,7 +159,7 @@ hr {
     pointer-events: all;
 }
 
-a {
+.popup #go {
     display: block;
     width: 150px;
     position: relative;

@@ -137,6 +137,7 @@ hr {
 .popup h1:active {
     transform: scale(.9);
 }
+
 .popup button {
     display: block;
     margin: 0 0 20px auto;
@@ -151,10 +152,24 @@ hr {
     outline: none;
     cursor: pointer;
 }
+
 .showPopup {
     opacity: 1;
     transform: translateY(0);
     pointer-events: all;
+}
+
+a {
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #0f72e5;
+    border-radius: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 0;
 }
 
 /* .popup {
@@ -183,16 +198,4 @@ hr {
     margin: 20px 0;
     line-height: 25px;
 }
-
-a {
-    display: block;
-    width: 150px;
-    position: relative;
-    margin: 10px auto;
-    text-align: center;
-    background-color: #0f72e5;
-    border-radius: 20px;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 8px 0;
-} */
+*/

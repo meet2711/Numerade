@@ -14,7 +14,7 @@ var wordList = ["48/8=6"];
 // guessList = guessList.concat(wordList);
 
 var word = wordList[Math.floor(Math.random() * wordList.length)].toUpperCase();
-console.log(word);
+// console.log(word);
 
 window.onload = function () {
     intialize();
@@ -135,7 +135,7 @@ function update() {
     }
 
     guess = guess.toLowerCase(); //case sensitive
-    console.log(guess);
+    // console.log(guess);
 
     // if (!guessList.includes(guess)) {
     //     document.getElementById("answer").innerText = "Not in word list";
@@ -157,7 +157,7 @@ function update() {
         }
     }
 
-    console.log(letterCount);
+    // console.log(letterCount);
 
     //first iteration, check all the correct ones first
     for (let c = 0; c < width; c++) {
@@ -181,7 +181,7 @@ function update() {
         }
     }
 
-    console.log(letterCount);
+    // console.log(letterCount);
     //go again and mark which ones are present but in wrong position
     for (let c = 0; c < width; c++) {
         let currTile = document.getElementById(row.toString() + '-' + c.toString());
